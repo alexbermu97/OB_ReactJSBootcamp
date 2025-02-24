@@ -1,0 +1,28 @@
+/*
+La Especificidad determina el orden en el que se pintan los estilos
+    Especificidad en orden de importancia:
+        ·!important
+        ·(Estilo definido en etiqueta) -> <p style=""></p>
+        ·(1, 0, 0) -> ID
+        ·(0, 1, 0) -> Class
+        ·(0, 0, 1) -> Tag
+        ·(0, 0, 0)
+
+    Se pueden combinar elementos para obtener una especificidad mayor
+*/
+
+#h1-id{
+    color: darksalmon;
+}
+
+h1{
+    color: blue;
+}
+
+.h1-class{
+    color: yellow;
+}
+
+p{
+    color: red;
+}

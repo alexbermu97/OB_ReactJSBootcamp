@@ -1,0 +1,18 @@
+:root{
+    --color-principal: #ccc;
+    --ancho-principal: 250px;
+}
+
+.titulo{
+    color: var(--color-principal);
+}
+
+.container{
+    background-color: #666;
+    padding: 1rem;
+    max-width: var(--ancho-principal);
+}
+
+.footer{
+    color: var(--color-principal);
+}

@@ -1,0 +1,49 @@
+/* Se usan de forma similar a las pseudoclases */
+
+.contenedor{
+    width: 300px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+div{
+    background-color: blue;
+}
+
+span.frase{
+    font-style: italic;
+}
+
+span.frase::before{
+    content: '"';
+    font-size: xx-small;
+}
+span.frase::after{
+    content: '"';
+    font-size: xx-small;
+}
+
+.libro{
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    p::first-letter{
+        font-size: xx-large;
+    }
+    p::first-line{
+        color: white;
+    }
+    p::selection{
+        background-color: red;
+        color: coral;
+    }
+}
+
+.listado ul li::marker{
+    color: brown;
+}
+
+/* 
+Especificidad: las clases y los IDs tienen más peso que las etiquetas a la hora
+de mostrar estilos que se definan para ellos.
+*/

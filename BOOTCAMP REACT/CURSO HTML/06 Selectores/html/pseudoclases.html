@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudoclases</title>
+        <!-- https://www.w3schools.com/css/css_pseudo-classes.asp -->
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .hover{
+                width: 300px;
+                height: 100px;
+                background-color: bisque;
+            }
+            .hover:hover{
+                background-color: burlywood;
+            }
+            .listado{
+                padding: 15px;
+                background-color: aquamarine;
+                p:first-child{
+                    color: green;
+                }
+            }
+            /*.listado p:first-child{
+                color: blue;
+            }*/
+            a:link{ /*Link no visitado aún*/
+                color:brown;
+            }
+            a:visited{
+                color: darkgoldenrod;
+            }
+            a:active{
+                color: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hover">
+            <p>
+                Loremu ipsum aljd aljkdbjkbadf alkjsd alsbadfsb ashdlabhsfbl 
+                akjsd alhdslablfs lasdhf alsjdhfblasdfhb ablsdhfb hsd aldhfda 
+            </p>
+        </div>
+        <div class="listado">
+            <p>Párrafo 1</p>
+            <p>Párrafo 2</p>
+            <p>Párrafo 3</p>
+        </div>
+        <div class="enlaces">
+            <a href="https://google.com" target="_blank">Enlace a Google</a>
+            <a href="https://scryfall.com" target="_blank">Enlace a Scryfall</a>
+        </div>
+    </body>
+</html>

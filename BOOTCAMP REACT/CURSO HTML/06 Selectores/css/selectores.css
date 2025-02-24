@@ -1,0 +1,21 @@
+.contenedor{
+    background-color: black;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    p{
+        margin: 5px;
+        color: greenyellow;
+    }
+    button{
+        font-family:'Courier New', Courier, monospace;
+        color: greenyellow;
+        background-color: gray;
+    }
+    button:hover{
+        color: green;
+        background-color: white;
+    }
+    #tnto{
+        color: yellow;
+    }
+}

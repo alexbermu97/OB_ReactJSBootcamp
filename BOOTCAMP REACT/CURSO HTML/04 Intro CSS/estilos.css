@@ -1,0 +1,33 @@
+/* Probando colores y fuentes */
+h1 {
+    color:blue;
+}
+h2 {
+    color:brown;
+}
+/* Un atributo posterior sobreescribe al mismo atributo anterior */
+p {
+    color:slategray;
+}
+#p1 {
+    font-size: 16pt;
+}
+#p2 {
+    font-size: 12pt;
+}
+#p1, .p1 {
+    text-decoration: underline;
+}
+.p1 {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+/* 
+"*" afecta a todos los elementos.
+Poniendo "*" delante de un id o una clase hace que afecte a todos los 
+elementos que comparten ese id o clase sin importar su tipo de elemento.
+*/
+.warning {
+    color: red;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <link rel="stylesheet" href="css/posicionamiento.css">
+</head>
+<body>
+    <h1>Posicionamiento en CSS</h1>
+    <li>Static: el formato estándar.</li>
+    <li>Relative: formato relativo a la posición estática.</li>
+    <li>Fixed: formato fijo para elementos que no se mueven.</li>
+    <li>Absolute: similar al formato fijo pero en relación a un elemento padre. 
+        Se suele usar en elementos que van dentro de otros, con el otro siendo relativo.</li>
+    <li>Sticky: mezcla entre relativo y fijo. Común en menús y otros elementos
+        que queremos que se vean cuando el usuario scrolea a partir de cierto punto.</li>
+
+    <div class="static">Soy un div estático (static)</div>
+    <div class="relative">Soy un div relativo (relative)</div>
+    <div class="fixed">Soy un div fijo (fixed)</div>
+    <div class="sticky">Soy un div pegajoso (sticky)</div>
+    <div class="relative container">
+        <div class="absolute">Soy un div absoluto (absolute)</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*Cada tipo de elemnto tiene efectos por defecto
+(en el inspector se muestran en cursiva)*/
+
+.div1, .div2{
+    margin: 10px 0px;
+    background-color: red;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+
+.span1, .span2{
+    background-color: aquamarine;
+}
+.span2{
+    float: right;
+}

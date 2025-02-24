@@ -1,0 +1,41 @@
+/*Estilos para colores*/
+.colores{
+    color:red;
+}
+.colorhex{
+    color:#c60f7b;
+}
+.colorrgb{
+    color:rgb(198, 15, 123)
+}
+.colorrgba{
+    color:rgba(249, 0, 145, 0.25)
+}
+.fondo{
+    background-color: #e5ece9;
+}
+html{
+    background-color: #969a97;
+}
+
+/*Tamaños*/
+.ancho{
+    background-color: #d6d1cd;
+    width: 100px;
+}
+.alto{
+    background-color: #d6d1cd;
+    height: 150px;
+}
+/*Trabajar con píxeles no es escalable*/
+
+.tarjeta{
+    border-style: solid;
+    border-color: #e5ece9;
+    border-width: 1px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    p{
+        color:#c60f7b;
+    }
+}
