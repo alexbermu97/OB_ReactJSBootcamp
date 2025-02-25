@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinners</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <!--
+        Probando los distintos spinners y sus estilos 
+        -->
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+        <div class="spinner-border spinner-border-sm text-dark">
+        </div>
+        
+        <div class="spinner-grow text-warning mx-2 my-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <button class="btn btn-primary disabled">
+            <div class="spinner-border spinner-border-sm"></div>
+            <span>Cargando...</span>
+        </button>
+    </div>
+
+    <div class="container py-4">
+        <!--
+        Prueba de animación de carga de tres puntos con delay entre los spinners de tipo "grow" 
+        -->
+        <div class="spinner-grow spinner-grow-sm mx-2 my-5" role="status" style="animation-delay: 0s;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        
+        <div class="spinner-grow spinner-grow-sm mx-2 my-5" role="status" style="animation-delay: 0.1s;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
+        <div class="spinner-grow spinner-grow-sm mx-2 my-5" role="status" style="animation-delay: 0.2s;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
