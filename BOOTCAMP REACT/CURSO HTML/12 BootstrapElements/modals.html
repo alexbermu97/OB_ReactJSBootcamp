@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container py-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-ejemplo">
+            Demo normal
+        </button>
+        <div class="modal fade" id="modal-ejemplo" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Normal modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal-ejemplo-static">
+            Demo static
+        </button>
+        <div class="modal fade" id="modal-ejemplo-static" data-bs-backdrop="static" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Static modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <p>Click close to close this modal.</p>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-4">
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal-ejemplo-scrollable">
+            Demo scrollable
+        </button>
+        <div class="modal fade" id="modal-ejemplo-scrollable" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Scrollable modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque ipsa, ut amet corporis tempora, voluptatibus molestias eos dolor, accusamus iusto cumque repellendus? Alias ipsum at odit autem doloribus tempora. Eius.</p>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container py-4">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-ejemplo-popover">
+            Demo popver & tooltips
+        </button>
+        <div class="modal fade" id="modal-ejemplo-popover" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Normal modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                        <hr>
+                        <p>
+                            This
+                            <a href="#" class="btn btn-secondary popver-test" title="Popover title" data-bs-content="Popver body content is set in this attribute." data-bs-toggle="popover">button</a>
+                            triggers a popover on click.
+                        </p>
+                        <hr>
+                        <p>
+                            Esto es un 
+                            <a href="#" data-bs-placement="top" title="Tooltip on top" data-bs-toggle="tooltip">tooltip</a>
+                        </p>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
